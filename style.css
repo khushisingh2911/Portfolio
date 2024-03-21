@@ -1,0 +1,462 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color:  #eddcd2;
+  color:#854e06
+}
+body{
+  background-color:	 #fff1e6;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+h2,p{
+  text-align: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 20px; /* Adjust margin to control spacing between list items */
+}
+.left{
+  font-size: 23px;
+}
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 23px 0;
+  gap: 30px; /* This will create space between the two sections */
+}
+
+.rightsection{
+  
+  padding: 1rem; /* This adds padding inside the sections */
+  flex-basis: 30%; /* This will define the initial size of the section */
+  box-sizing: border-box; /* This ensures the padding is included in the width */
+}
+  .leftsection {
+      background-color:  #fff1e6;
+  padding: 1rem; /* This adds padding inside the sections */
+  flex-basis: 50%; /* This will define the initial size of the section */
+  font-size: 35px;
+  box-sizing: border-box; /* This ensures the padding is included in the width */
+}
+@keyframes colorChange {
+  from { color:  #fff1e6; }
+  to { color: #c3aa9c; }
+}
+
+
+
+
+/* Apply the animation to a class */
+.leftsection {
+  animation-name: colorChange; /* Reference the name of the keyframes */
+  animation-duration: 2s; /* Set how long the animation takes */
+  animation-fill-mode: both; /* Keep the end state after the animation */
+}ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Flexbox layout for the list */
+ul {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Basic button styles */
+li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c59a81;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+li a:hover {
+  background-color: #854e06;
+  font-size: 0.9rem;
+}
+
+      /* CSS styles here */
+      .container {
+          display: flex;
+          justify-content: space-around;
+          margin: 20px;
+      }
+
+      /* Card Styles */
+
+.card-front h2 {
+  text-align: center;
+}
+
+/* If you also need to center the text vertically within the card front */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will center the content vertically */
+}
+
+/* Additional styles for the card to ensure proper layout */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Adjust this as necessary to your layout */
+
+    box-shadow: 0 0 15px 5px #905656;
+    margin: 100px;
+}
+
+/* Glow effect on hover */
+.card:hover {
+box-shadow: 0 0 15px 5px #905656; /* Glowing shadow effect */
+}
+.card1:hover {
+  box-shadow: 0 0 15px 5px #905656; /* Glowing shadow effect */
+  }
+  
+
+
+
+      .card h2 {
+          color: #854e06;
+          text-align: center;
+      }
+
+      .card ul {
+          
+          padding: 0;
+      }
+
+      .card ul li {
+          padding: 10px 0;
+         
+      }
+
+      .card ul li:last-child {
+          border-bottom: none;
+      }
+      footer {
+          background-color:  #eddcd2;
+          color: #854e06;
+          text-align: center;
+          padding: 20px;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+      }
+      
+      /* Rest of your CSS ... */
+
+.container {
+  perspective: 1000px; /* This adds perspective to the container */
+}
+
+.card{
+  position: relative;
+  width: 200px; /* Adjust the width of the card */
+  height: 300px; /* Adjust the height of the card */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card1{
+  position: relative;
+  width: 200px; /* Adjust the width of the card */
+  height: 300px; /* Adjust the height of the card */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* This is the card's front styling */
+.card .card-front,
+.card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden; /* This hides the back side of the card when it is facing away */
+ 
+}
+.card1 .card1-front,
+.card1 .card1-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden; /* This hides the back side of the card when it is facing away */}
+
+/* This is the card's back styling, which starts rotated 180 degrees */
+.card .card-back {
+  transform: rotateY(180deg);
+}
+
+/* Hover state - flip the card */
+.container .card:hover {
+  transform: rotateY(180deg);
+ 
+}
+
+
+/* Light Theme Styles 
+
+/* ...other light theme styles... */
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #171c2d;
+  color: #586382;
+}
+
+body.dark-theme nav {
+  background-color: #171c2d;
+  color: #586382;
+}
+
+body.dark-theme footer {
+  background-color:#171c2d;
+  color: #586382;
+}
+
+
+
+
+body.dark-theme .leftsection {
+  background-color: #171c2d; /* Dark theme background color for left section */
+  color: #586382 !important; /* Use important sparingly */
+}
+
+body.dark-theme, body.light-theme {
+  font-size: 16px; /* This should be consistent */
+}
+
+
+
+
+/* Dark Theme Styles for the Right Navigation */
+body.dark-theme .right ul {
+  background-color: #171c2d; /* Dark background color for right nav */
+  /* Other dark theme styles if needed */
+}
+
+/* Glow effect on hover for each list item */
+body.dark-theme .right ul li:hover {
+  box-shadow: 0 0 10px #586382(255, 255, 255, 0.7);
+}
+
+/* Dark theme styles for navigation links */
+.dark-theme nav .right ul li a {
+  background-color: #171c2d;
+  color: #586382;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+  padding: 10px 20px;
+  box-shadow: 0 0 5px #ffffff;
+  padding: 10px 20px;
+}
+
+
+/* Regular dark theme styles for the card */
+.container .card:hover {
+  transform: rotateY(180deg);
+
+}
+
+/* D/* Dark Theme Styles */
+body.dark-theme .container .card {
+  background-color: #171c2d; /* Dark theme background color for cards */
+  color: #586382; /* Text color for cards */
+  border: 2px solid #586382; /* Dark theme border color for cards */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Subtle white glow for cards */
+  transition: box-shadow 0.3s ease-in-out, transform 0.6s; /* Smooth transitions for shadow and flip */
+}
+/* Dark Theme Styles */
+body.dark-theme .container .card h2,
+body.dark-theme .container .card p {
+  color: white; /* This will set the text color to white for h2 and p tags inside cards */
+}
+
+/* Additional hover effect for dark theme */
+body.dark-theme .container .card:hover {
+  box-shadow: 0 0 15px rgba(88, 99, 130, 0.7); /* Brighter glow on hover with adjusted color */
+  /* Ensure transform is included if it's not flipping */
+  transform: rotateY(180deg); /* For flip effect on hover */
+}
+
+
+/* Dark Theme Styles for Card Hover */
+
+/* Existing CSS */
+/* ... */
+
+/* Style the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #854e06;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "🌜";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #c59a81;
+  transition: .4s;
+  border-radius: 50%;
+}
+.switch input:checked + .slider::before {
+  content: "🌞"; /* Sun emoji for light mode */
+  background-color: #ffd700; /* You can change this color to whatever you like */
+  /* Other styles if needed */
+}
+
+input:checked + .slider {
+  background-color: #586382;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #586382;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+/* Hide skills list initially */
+.skills-list.hidden {
+  display: none;
+}
+
+/* Add your existing CSS styles here */
+.card1 {
+  position: relative;
+  width: 400px; /* Adjust card width as needed */
+  height: 300px; /* Adjust card height as needed */
+  overflow: hidden;
+  border: 5px solid #c59a81; /* Dark theme border color for cards */
+  box-shadow: 0 0 15px 5px #905656; /* Subtle white glow for cards */
+}
+
+.card1:hover {
+  box-shadow: 0 0 15px 10px #905656; /* Glow effect on hover with adjusted color and intensity */
+}
+
+
+.card-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0px); /* Initially no blur */
+  transition: filter 0.3s ease;
+ 
+ 
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff; /* Text color */
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-top-left-radius: 10px; /* Curve top-left corner */
+  border-top-right-radius: 10px; /* Curve top-right corner */
+}
+
+.card1:hover .card-background img {
+  filter: blur(5px); /* Add blur on hover */
+}
+
+.card1:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.card1:hover .card-content {
+  transform: translateY(0); /* Slide up content on hover */
+}
+/* Add your existing CSS styles here */
+
+
+body.dark-theme .container .card1 {
+  background-color: #171c2d; /* Dark theme background color for cards */
+  color: #586382; /* Text color for cards */
+  border: 10px solid #586382; /* Dark theme border color for cards */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Subtle white glow for cards */
+  position: relative;
+  width: 400px; /* Adjust card width as needed */
+  height: 300px; /* Adjust card height as needed */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out, transform 0.6s; /* Smooth transitions for shadow and flip */
+}
+
+body.dark-theme .container .card:hover {
+  box-shadow: 0 0 15px rgba(88, 99, 130, 0.7); /* Brighter glow on hover with adjusted color */
+  /* Ensure transform is included if it's not flipping */
+  transform: rotateY(180deg); /* For flip effect on hover */
+}
+body.light-theme .container .card1 {
+  background-color: #854e06; /* Dark theme background color for cards */
+  color: #586382; /* Text color for cards */
+  border: 10px solid #905656; /* Dark theme border color for cards */
+  box-shadow: 0 0 15px #eddcd2(255, 255, 255, 0.7); /* Subtle white glow for cards */
+  position: relative;
+  width: 400px; /* Adjust card width as needed */
+  height: 300px; /* Adjust card height as needed */
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out, transform 0.6s; /* Smooth transitions for shadow and flip */
+}
